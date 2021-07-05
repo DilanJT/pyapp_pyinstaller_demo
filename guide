@@ -1,0 +1,23 @@
+
+
+start jenkins 
+
+sudo systemctl start jenkins
+sudo systemctl status jenkins
+sudo ufw allow 8080
+sudo ufw status
+--->if not active<-----
+sudo ufw allow OpenSSH
+sudo ufw enable
+http://localhost:8080/
+
+
+- Run Jenkins in Docker
+	- Run jenkins as a docker container from the jenkins/jenkins Docker image.
+	
+	- Run jenkins in docker : https://www.jenkins.io/doc/tutorials/build-a-python-app-with-pyinstaller/#on-macos-and-linux
+	
+	- Create a bridge network in Docker using the following " doker network create command" 
+	
+
+
